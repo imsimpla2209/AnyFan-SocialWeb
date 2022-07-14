@@ -64,6 +64,6 @@ route(app);
 var getPort = port;
 //127.0.0.1 - localhost
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`App listening on port ${port}`)
 })
